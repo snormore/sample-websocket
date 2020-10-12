@@ -47,7 +47,7 @@
         const heapTotal = document.getElementById('heapTotal');
         const heapUsed = document.getElementById('heapUsed');
         const external = document.getElementById('external');
-        const ws = new WebSocket(`ws://${location.host}`);
+        const ws = new WebSocket(`wss://${location.host}`);
 
         ws.onmessage = function(event) {
           const data = JSON.parse(event.data);
